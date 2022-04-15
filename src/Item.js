@@ -17,7 +17,7 @@ function Item(props) {
         setUserData(parsedRes)
       }
       fetchData()
-    })
+    },[])
     
   return (
     <>
