@@ -8,7 +8,6 @@ import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 function App() {
-  console.log(process.env)
   const [Query, setQuery] = useState("");
   const [Data, setData] = useState([]);
   const [Page, setPage] = useState(1);
@@ -22,7 +21,6 @@ function App() {
       }
     );
     const parsedRes = await res.json();
-    console.log(parsedRes.items);
     let newData=Data.concat(parsedRes.items)
     function filterData(arr) {
       var unique = [];
@@ -47,7 +45,6 @@ function App() {
       );
       const parsedRes = await res.json();
       setLimit(parsedRes.total_count)
-      console.log(parsedRes.items);
       setData(parsedRes.items)
       setPage(2)
     }
