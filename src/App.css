@@ -60,3 +60,9 @@ button{
   justify-content: center;
   cursor: pointer;
 }
+input{
+  width:550px;
+  font-size:large;
+  height:40px;
+  border-radius:10px
+}

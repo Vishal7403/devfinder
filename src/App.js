@@ -74,7 +74,7 @@ function App() {
         <h2>devfinder</h2>
         <button style={{backgroundColor:(Mode)?'white':'rgb(0, 30, 60)',color:(Mode)?'black':'white'}} onClick={toggleMode}>{!Mode?<LightModeIcon/>:<DarkModeIcon/>}{!Mode?'Light':'Dark'}</button>
         </div>
-      <input value={Query} onChange={handleChange} style={{width:'550px',fontSize:'large',height:'40px',borderRadius:'10px'}}/>
+      <input value={Query} onChange={handleChange} placeholder="Enter username or email" />
       </div>
       <div style={{ display: "flex", flexDirection: "column" }}>
         {Query && Data.length>0  && <InfiniteScroll
