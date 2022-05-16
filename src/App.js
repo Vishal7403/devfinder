@@ -8,7 +8,7 @@ import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 function App() {
-  console.log(process.env)
+  
   const [Query, setQuery] = useState("");
   const [Data, setData] = useState([]);
   const [Page, setPage] = useState(1);
