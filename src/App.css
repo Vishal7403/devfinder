@@ -98,7 +98,7 @@ input {
     column-gap: 60px;
   }
 }
-@media only screen and (max-width: 700px) and (min-width: 500px) {
+@media only screen and (max-width: 700px) and (min-width: 450px) {
   input {
     width: 350px;
   }
@@ -120,7 +120,17 @@ input {
     flex-direction: column;
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width:700px) and (min-width:500px)
+{
+  .box{
+    column-gap: 70px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .container{
+    padding: 3rem;
+  }
   input {
     width: 250px;
   }
@@ -142,5 +152,11 @@ input {
   .box {
     padding: 0px 20px;
     column-gap: 20px;
+  }
+}
+@media only screen and (max-width:400px)
+{
+  .container{
+    padding:1rem;
   }
 }
