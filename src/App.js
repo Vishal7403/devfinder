@@ -71,7 +71,7 @@ function App() {
   return (
     <div className="container">
       <div style={{display:'flex',flexDirection:'column',alignItems:'center',marginBottom:'20px'}}>
-        <div style={{display:'flex',justifyContent:'space-between',width:'48%'}}>
+        <div style={{display:'flex',justifyContent:'space-around',width:'-webkit-fill-available',alignItems:'center'}}>
         <h2>devfinder</h2>
         <button style={{backgroundColor:(Mode)?'white':'rgb(0, 30, 60)',color:(Mode)?'black':'white'}} onClick={toggleMode}>{!Mode?<LightModeIcon/>:<DarkModeIcon/>}{!Mode?'Light':'Dark'}</button>
         </div>
