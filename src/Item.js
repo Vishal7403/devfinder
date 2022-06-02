@@ -49,7 +49,7 @@ function Item(props) {
             </div>
           </div>
           <div className="content">
-            <div style={{ wordBreak: "break-all", width: "80%" }}>
+            <div style={{ wordBreak: "break-all", width: "90%" }}>
               {UserData.bio
                 ? UserData.bio.substr(0, 200)
                 : "This profile has no bio"}
